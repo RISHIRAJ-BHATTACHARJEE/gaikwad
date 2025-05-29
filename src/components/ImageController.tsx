@@ -28,10 +28,10 @@ const ImageController = ({
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto h-[10vh] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full max-w-4xl mx-auto h-[10vh] md:h-[12vh] flex items-center justify-center overflow-hidden">
       <button
         onClick={prev}
-        className="absolute left-0 h-full bg-red-600 w-8 flex items-center justify-center text-white z-10"
+        className="absolute left-0 h-full bg-red-600 w-8 md:w-10 flex items-center justify-center text-white z-10"
         aria-label="Previous"
       >
         <ChevronLeft />
@@ -42,7 +42,7 @@ const ImageController = ({
           <div
             key={index}
             onClick={() => setCurrent(index)} // Update the current index when a thumbnail is clicked
-            className={`w-[150px] h-[100px] flex-shrink-0 rounded overflow-hidden cursor-pointer transition-all ${
+            className={`w-[150px] h-[100px] md:h-[12vh] flex-shrink-0 rounded overflow-hidden cursor-pointer transition-all ${
               index === current ? 'border-2 border-blue-500 opacity-100' : 'opacity-70'
             }`} // Highlight the current image
           >
@@ -58,7 +58,7 @@ const ImageController = ({
 
       <button
         onClick={next}
-        className="absolute right-0 h-full bg-red-600 w-8 flex items-center justify-center text-white z-10"
+        className="absolute right-0 h-full bg-red-600 w-8 md:w-10 flex items-center justify-center text-white z-10"
         aria-label="Next"
       >
         <ChevronRight />

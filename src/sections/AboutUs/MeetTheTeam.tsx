@@ -1,23 +1,23 @@
 const MeetTheTeam = () => {
   return (
     <div className="py-8">
-      <h2 className="text-2xl py-4 font-semibold text-center uppercase">
+      <h2 className="text-2xl md:text-3xl font-semibold text-center uppercase">
         Meet The Team
       </h2>
-      <div className="grid grid-cols-2 gap-5 p-8">
+      <div className="grid grid-cols-2 gap-5 md:gap-10 p-8 md:mx-16">
         {/* Card-1 */}
         <div className="rounded-2xl bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] h-[40vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
           {/* Name, Designation & Linkedin */}
           <div className="flex gap-4">
             {/* Name & Designation */}
             <div className="text-nowrap flex flex-col">
-              <h2 className="text-xs font-semibold">Jasmine Jasmine</h2>
+              <h2 className="text-xs md:text-xl font-semibold">Jasmine Jasmine</h2>
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img src="/icons/linkedin.png" alt="linkedin" className="size-3" />
+            <img src="/icons/linkedin.png" alt="linkedin" className="size-3 md:size-6" />
           </div>
-          <p className="text-xs font-light pl-2.5 leading-5">
+          <p className="text-xs md:text-[16px] md:pl-6 font-light pl-2.5 leading-5">
             Lorem Ipsum is simply dummy text of the{" "}
           </p>
         </div>
@@ -28,13 +28,13 @@ const MeetTheTeam = () => {
           <div className="flex gap-4">
             {/* Name & Designation */}
             <div className="text-nowrap flex flex-col">
-              <h2 className="text-xs font-semibold">Jasmine Jasmine</h2>
+              <h2 className="text-xs md:text-xl font-semibold">Jasmine Jasmine</h2>
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img src="/icons/linkedin.png" alt="linkedin" className="size-3" />
+            <img src="/icons/linkedin.png" alt="linkedin" className="size-3 md:size-6" />
           </div>
-          <p className="text-xs font-light pl-2.5 leading-5">
+          <p className="text-xs md:text-[16px] md:pl-6 font-light pl-2.5 leading-5">
             Lorem Ipsum is simply dummy text of the{" "}
           </p>
         </div>
@@ -45,13 +45,13 @@ const MeetTheTeam = () => {
           <div className="flex gap-4">
             {/* Name & Designation */}
             <div className="text-nowrap flex flex-col">
-              <h2 className="text-xs font-semibold">Jasmine Jasmine</h2>
+              <h2 className="text-xs md:text-xl font-semibold">Jasmine Jasmine</h2>
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img src="/icons/linkedin.png" alt="linkedin" className="size-3" />
+            <img src="/icons/linkedin.png" alt="linkedin" className="size-3 md:size-6" />
           </div>
-          <p className="text-xs font-light pl-2.5 leading-5">
+          <p className="text-xs md:text-[16px] md:pl-6 font-light pl-2.5 leading-5">
             Lorem Ipsum is simply dummy text of the{" "}
           </p>
         </div>
@@ -62,13 +62,13 @@ const MeetTheTeam = () => {
           <div className="flex gap-4">
             {/* Name & Designation */}
             <div className="text-nowrap flex flex-col">
-              <h2 className="text-xs font-semibold">Jasmine Jasmine</h2>
+              <h2 className="text-xs md:text-xl font-semibold">Jasmine Jasmine</h2>
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img src="/icons/linkedin.png" alt="linkedin" className="size-3" />
+            <img src="/icons/linkedin.png" alt="linkedin" className="size-3 md:size-6" />
           </div>
-          <p className="text-xs font-light pl-2.5 leading-5">
+          <p className="text-xs md:text-[16px] md:pl-6 font-light pl-2.5 leading-5">
             Lorem Ipsum is simply dummy text of the{" "}
           </p>
         </div>

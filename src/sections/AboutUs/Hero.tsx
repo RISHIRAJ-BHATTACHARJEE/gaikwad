@@ -34,13 +34,13 @@ const Hero = () => {
           <XIcon className="cursor-pointer m-4 size-8" strokeWidth={1} onClick={togglePanel} />
         </div>
         <ul className="mx-6 mt-6 flex flex-col gap-6 text-xl">
-          <li className="border-b border-zinc-500 pb-3">Home</li>
-          <li className="border-b border-zinc-500 pb-3">About Us</li>
-          <li className="border-b border-zinc-500 pb-3">Career</li>
-          <li className="border-b border-zinc-500 pb-3">Projects</li>
-          <li className="border-b border-zinc-500 pb-3">3d Tour</li>
-          <li className="border-b border-zinc-500 pb-3">Blogs</li>
-          <li className="border-b border-zinc-500 pb-3">Newsletter</li>
+          <a href="/" className="border-b border-zinc-500 pb-3">Home</a>
+          <a href="/about" className="border-b border-zinc-500 pb-3">About Us</a>
+          <a href="/career" className="border-b border-zinc-500 pb-3">Career</a>
+          <a href="/projects" className="border-b border-zinc-500 pb-3">Projects</a>
+          <a href="#" className="border-b border-zinc-500 pb-3">3d Tour</a>
+          <a href="/blogs" className="border-b border-zinc-500 pb-3">Blogs</a>
+          <a href="/" className="border-b border-zinc-500 pb-3">Newsletter</a>
         </ul>
       </div>
     </div>

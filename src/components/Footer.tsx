@@ -12,7 +12,7 @@ const Footer = () => {
         <img src="/icons/x.png" alt="x" className="w-4"/>
       </div>
       {/* Links */}
-      <ul className="ml-2 flex flex-col gap-5 text-lg">
+      <ul className="ml-2 flex flex-col md:flex-row gap-5 md:gap-8 text-lg">
         <li>Home</li>
         <li>About Us</li>
         <li>Career</li>
@@ -26,7 +26,7 @@ const Footer = () => {
         <input type="text" placeholder="Enter Email"/>
         <ArrowRight strokeWidth={1} className="text-white"/>
       </div>
-      <h2 className="text-center text-[#808080] px-10 w-fit leading-7 pt-12">COPYRIGHT 2025 REAL ESTATE 
+      <h2 className="text-center text-[#808080] px-10 w-fit md:w-full md:text-xl leading-7 pt-12">COPYRIGHT 2025 REAL ESTATE 
       ALL RIGHTS RESERVED</h2>
     </div>
   )

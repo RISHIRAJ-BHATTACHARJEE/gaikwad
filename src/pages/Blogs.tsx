@@ -1,4 +1,4 @@
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 import Footer from "../components/Footer";
 
@@ -77,6 +77,24 @@ const Blogs = () => {
             </div>
           ))}
         </div>
+        <div
+        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transition-transform duration-300 ease-in-out ${
+          isPanelOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-4">
+          <XIcon className="cursor-pointer m-4 size-8" strokeWidth={1} onClick={togglePanel} />
+        </div>
+        <ul className="mx-6 mt-6 flex flex-col gap-6 text-xl">
+          <li className="border-b border-zinc-500 pb-3">Home</li>
+          <li className="border-b border-zinc-500 pb-3">About Us</li>
+          <li className="border-b border-zinc-500 pb-3">Career</li>
+          <li className="border-b border-zinc-500 pb-3">Projects</li>
+          <li className="border-b border-zinc-500 pb-3">3d Tour</li>
+          <li className="border-b border-zinc-500 pb-3">Blogs</li>
+          <li className="border-b border-zinc-500 pb-3">Newsletter</li>
+        </ul>
+      </div>
       </div>
       <Footer />
     </>

@@ -10,32 +10,48 @@ const AboutUs = () => {
           Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id turpis
           porttitor sed cras donec. Id ac molestie purus tincidunt in cras. Quis
           a lacus molestie praesent suspendisse ac tellus. Auctor tristique
-          ultrices magna purus. <a href="/about" className="text-zinc-300">Read More</a>
+          ultrices magna purus. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Reiciendis quos praesentium numquam fugiat neque.
+          Inventore nihil placeat officia corporis fuga eaque adipisci neque
+          quod assumenda nemo, cum voluptatum ipsum impedit?Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Nisi, natus dignissimos, hic
+          facere at sapiente odio ab explicabo doloremque quas perspiciatis
+          magni rerum minima veniam aliquid temporibus et voluptate? Reiciendis,
+          dolore maxime?  purus. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Reiciendis quos praesentium numquam fugiat neque.
+          Inventore nihil placeat officia corporis fuga eaque adipisci neque
+          quod assumenda nemo, cum voluptatum ipsum impedit?Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Nisi, natus dignissimos, hic
+          facere at sapiente odio ab explicabo doloremque quas perspiciatis
+          magni rerum minima veniam aliquid temporibus et voluptate? Reiciendis,
+          dolore maxime?
         </p>
         <hr />
         <div className="flex flex-col gap-10 md:mx-12">
           <div className="flex items-center justify-between">
             <div className="flex flex-col gap-2">
-              <h2>Homes for rent</h2>
-              <p className="text-3xl">7239</p>
+              <h2 className="md:text-xl">Homes for rent</h2>
+              <p className="text-3xl md:text-4xl">7239</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h2>State</h2>
-              <p className="text-3xl">79+</p>
+              <h2 className="md:text-xl">State</h2>
+              <p className="text-3xl md:text-4xl">79+</p>
             </div>
           </div>
 
           <div className="flex items-center justify-between">
             <div className="flex flex-col gap-2">
-              <h2>Homes to buy</h2>
-              <p className="text-3xl">1082</p>
+              <h2 className="md:text-xl">Homes to buy</h2>
+              <p className="text-3xl md:text-4xl">1082</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h2>Agents</h2>
-              <p className="text-3xl">219+</p>
+              <h2 className="md:text-xl">Agents</h2>
+              <p className="text-3xl md:text-4xl">219+</p>
             </div>
           </div>
         </div>
+        <hr />
+        <img src="house-1.png" alt="" />
       </div>
     </div>
   );

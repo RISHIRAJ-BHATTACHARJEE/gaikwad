@@ -2,8 +2,8 @@ import { ArrowRight } from "lucide-react"
 
 const Footer = () => {
   return (
-    <div className="bg-[#17262A] p-6 text-white ">
-      <img src="/navbar-logo.png" alt="logo" className="w-48"/>
+    <div className="bg-[#17262A] p-6 text-white md:flex md:flex-col md:gap-4">
+      <img src="/navbar-logo.png" alt="logo" className="w-48 md:w-62"/>
       {/* Logos */}
       <div className="flex gap-3 py-7">
         <img src="/icons/instagram.png" alt="instagram" className="w-4 ml-2"/>

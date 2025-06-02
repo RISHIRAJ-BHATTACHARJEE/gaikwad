@@ -33,9 +33,9 @@ const facilities = [
 
 const AboutWorkingHere = () => {
   return (
-    <div className="bg-gradient-to-l from-[#CE3631] to-[#E64237E5] text-white px-6 py-12">
-      <h2 className="uppercase text-center font-semibold text-xl">About working here</h2>
-      <p className="text-center py-12 font-light">
+    <div className="bg-gradient-to-l from-[#CE3631] to-[#E64237E5] text-white px-6 md:px-18 py-12">
+      <h2 className="uppercase text-center font-semibold text-xl md:text-3xl">About working here</h2>
+      <p className="text-center py-12 font-light md:text-lg">
         Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id turpis
         porttitor sed cras donec. Id ac molestie purus tincidunt in cras. Quis a
         lacus molestie praesent suspendisse ac tellus. Auctor tristique ultrices
@@ -47,9 +47,9 @@ const AboutWorkingHere = () => {
       <div className="grid grid-cols-2 gap-6">
         {facilities.map((facility, index) => (
           <div key={index} className="flex flex-col gap-4 items-center justify-center">
-            <img src={facility.img} alt={facility.title} className="w-8"/>
-            <h2 className="font-semibold text-center">{facility.title}</h2>
-            <p className="text-center text-xs">{facility.description}</p>
+            <img src={facility.img} alt={facility.title} className="w-8 md:w-12"/>
+            <h2 className="font-semibold text-center md:text-xl">{facility.title}</h2>
+            <p className="text-center text-xs md:text-lg">{facility.description}</p>
           </div>
         ))}
       </div>

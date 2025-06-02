@@ -85,20 +85,20 @@ const OpenPositions = () => {
   };
 
   return (
-    <div className="py-12 px-8">
-      <h2 className="text-xl uppercase text-center font-semibold pt-6">
+    <div className="py-12 px-8 md:px-28">
+      <h2 className="text-xl md:text-3xl uppercase text-center font-semibold pt-6">
         Open Positions
       </h2>
       <div className="my-12">
         {openPositions.map((position, index) => (
-          <div key={index} className="border-b border-zinc-500 py-6 flex">
+          <div key={index} className="border-b border-zinc-500 py-6 md:py-0 md:pt-7.5 flex md:justify-between">
             <div className="flex flex-col gap-2">
-              <h2 className="font-semibold text-xl">{position.title}</h2>
+              <h2 className="font-semibold text-xl md:text-2xl">{position.title}</h2>
               <p className="text-zinc-500 pr-10">{position.description}</p>
             </div>
             <button
               onClick={toggleModal}
-              className="text-white text-nowrap text-sm bg-[#E74238] my-5 px-4 rounded-full"
+              className="text-white text-nowrap text-sm md:text-lg bg-[#E74238] my-5 px-4 md:px-5.5 md:py-3 rounded-full"
             >
               Apply Now
             </button>
@@ -108,7 +108,7 @@ const OpenPositions = () => {
       {/* Popup Modal with Open-Up Animation */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 animate-fade-in">
-          <div className="relative bg-black text-white rounded-lg w-80 max-h-[95vh] overflow-y-auto p-6 animate-open-up">
+          <div className="relative bg-black text-white rounded-lg w-80 md:w-120 max-h-[95vh] md:max-h-[97vh] overflow-y-auto p-6 animate-open-up">
             {/* Close Button */}
             <div className="flex justify-end">
               <XIcon
@@ -129,7 +129,7 @@ const OpenPositions = () => {
                       value={qualification}
                       
                     >
-                      <SelectTrigger className="border-b text-sm py-2 mb-4 w-full text-white bg-transparent">
+                      <SelectTrigger className="border-b text-sm md:text-2xl py-2 md:py-3 md:mb-5 md:pb-7 md:mt-4 mb-4 w-full text-white bg-transparent">
                         <SelectValue placeholder="Select Qualification" />
                       </SelectTrigger>
                       <SelectContent className="bg-black text-white border-zinc-500">
@@ -148,7 +148,7 @@ const OpenPositions = () => {
                       onValueChange={setExperience}
                       value={experience}
                     >
-                      <SelectTrigger className="border-b text-sm py-2 mb-4 w-full text-white bg-transparent">
+                      <SelectTrigger className="border-b text-sm md:text-2xl py-2 mb-4 md:py-3 md:mb-5 md:pb-7 md:mt-7 w-full text-white bg-transparent">
                         <SelectValue placeholder="Select Experience" />
                       </SelectTrigger>
                       <SelectContent className="bg-black text-white border-zinc-500">
@@ -166,7 +166,7 @@ const OpenPositions = () => {
                       key={index}
                       type="text"
                       placeholder={field}
-                      className="border-b text-sm py-2 mb-4 outline-none w-full text-white bg-transparent"
+                      className="border-b text-sm md:text-xl py-2 md:py-3 mb-4 md:mb-5 outline-none w-full text-white bg-transparent"
                     />
                   );
                 }
@@ -175,7 +175,7 @@ const OpenPositions = () => {
 
             {/* File Upload Section */}
             <div className="flex gap-6 pt-3">
-              <h2 className="text-sm text-zinc-400 ml-4">Upload Files</h2>
+              <h2 className="text-sm md:text-xl text-zinc-400 ml-4">Upload Files</h2>
               <div className="flex flex-col items-center gap-2">
                 <label className="relative">
                   <input
@@ -184,19 +184,19 @@ const OpenPositions = () => {
                     className="opacity-0 absolute w-0 h-0"
                     onChange={handleFileChange}
                   />
-                  <span className="inline-block bg-white text-black px-3 py-2 rounded-full text-xs cursor-pointer hover:bg-gray-100">
+                  <span className="inline-block bg-white text-black px-3 py-2 md:px-4 md:py-3 rounded-full text-xs md:text-xl cursor-pointer hover:bg-gray-100">
                     Choose Files
                   </span>
                 </label>
-                <span className="text-xs text-zinc-400">{fileText}</span>
+                <span className="text-xs md:text-lg text-zinc-400">{fileText}</span>
               </div>
             </div>
 
-            <div className="flex items-start gap-2 mt-5">
-              <input type="checkbox" name="" id="" className="mt-0.5" />
-              <p className="text-[10px]">
+            <div className="flex items-start gap-2 mt-5 md:ml-5">
+              <input type="checkbox" name="" id="" className="mt-0.5 md:mt-2" />
+              <p className="text-[10px] md:text-lg">
                 Check this box if you have prior experiencee working in
-                Real-Estate, or worked with a real estate agent.
+                Real-Estate.
               </p>
             </div>
 

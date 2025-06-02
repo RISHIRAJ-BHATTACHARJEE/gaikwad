@@ -151,7 +151,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[110vmin] mx-auto"
+      className="relative w-[70vmin] h-[110vmin] md:h-[60vmin] md:scroll-none mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

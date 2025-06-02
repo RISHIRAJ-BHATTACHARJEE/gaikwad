@@ -4,7 +4,7 @@ const OurCoreValues = () => {
       <h2 className="uppercase text-center text-2xl md:text-3xl font-semibold pb-8">
         Our Core Values
       </h2>
-      <div className="grid grid-cols-2 gap-20 m-12 items-center justify-between text-center">
+      <div className="lg:flex lg:mx-38 grid grid-cols-2 gap-20 m-12 items-center justify-between text-center">
         {/* Quality */}
         <div className="flex flex-col items-center justify-between gap-2 md:gap-3">
           <img src="/icons/quality.png" alt="quality" className="w-10 md:w-12"/>

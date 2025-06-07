@@ -19,13 +19,14 @@ const LiveProjects = () => {
         live projects
       </h2>
       {/* Glassmorphism Card */}
-      <div className="text-white flex flex-col gap-6 p-6 md:p-8 mx-6 md:mx-38 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
+      
+      <div className="text-white flex flex-col lg:flex-row gap-6 p-6 md:p-8 mx-6 md:mx-38 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
         {/* Image Slider */}
         <div className="flex flex-col gap-6">
           <img
             src={images[current]}
             alt="main"
-            className="aspect-video w-full h-[220px] object-cover rounded-xl"
+            className="aspect-video w-full lg:w-5/6 h-[220px] object-cover rounded-xl"
           />
           <ImageController
             current={current}

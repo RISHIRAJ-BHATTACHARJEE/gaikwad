@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:pt-12">
           <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
           <MenuIcon
-            className="lg:hidden text-white md:size-10 self-end translate-x-16 md:translate-x-0 -translate-y-3"
+            className="lg:hidden text-white md:size-10 self-end -translate-y-3"
             onClick={togglePanel}
           />
           <ul className="hidden lg:flex space-x-7 text-sm md:text-lg font-light">
@@ -45,15 +45,15 @@ const Hero = () => {
         <h2 className="uppercase font-semibold text-3xl lg:text-[6rem] md:text-7xl pt-16 tracking-wider">
           dream estate
         </h2>
-        <div className="lg:sticky lg:bottom-10">
+        <div className="lg:sticky">
           <div className="relative lg:flex items-end">
-            <div className="hidden lg:flex flex-col gap-6 absolute -left-36 top-34 w-2/5">
+            <div className="hidden lg:flex flex-col gap-6 absolute -left-36 top-18 w-2/4">
               <p className="font-light text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </p>
-              <button className="primary text-sm w-1/2">Discover More</button>
+              <button className="primary text-sm w-2/3 text-nowrap lg:pr-2!">Discover More</button>
             </div>
             <img
               src="1.png"

@@ -38,9 +38,36 @@ const Awards = () => {
 
   return (
     <div className="bg-gradient-to-r from-[#24343BCC] to-[#17262A] montserrat-regular text-white">
-      <div className="flex items-center justify-between w-full p-2 md:p-6">
-        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48" />
-        <MenuIcon className="text-white md:size-10" onClick={togglePanel} />
+      <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
+        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+        <MenuIcon
+          className="lg:hidden text-white md:size-10 self-end -translate-y-3"
+          onClick={togglePanel}
+        />
+        <ul className="hidden lg:flex space-x-10 text-sm md:text-lg font-light">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/career">Career</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <a href="#">3d Tour</a>
+          </li>
+          <li>
+            <a href="/blogs">Blogs</a>
+          </li>
+        </ul>
+        <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
+          <img src="/icons/call.png" alt="" className="w-4" />
+          Contact Us
+        </button>
       </div>
       <h2 className="text-xl md:text-3xl font-semibold text-center">Awards</h2>
       <p className="p-6 text-center text-sm md:text-lg md:mx-18">
@@ -48,17 +75,23 @@ const Awards = () => {
         porttitor sed cras donec. Id ac molestie purus tincidunt in cras.
       </p>
       {/* Awards Container */}
-      <div className="mx-10 md:mx-18 flex flex-col gap-8 pb-8">
+      <div className="mx-10 md:mx-18 flex flex-col gap-8 pb-8 lg:grid grid-cols-2">
         {awards.map((award, index) => (
           <div
             key={index}
-            className={`${award.bgColor} p-6 md:p-10 rounded-2xl flex flex-col gap-4 md:gap-8`}
+            className={`${award.bgColor} p-6 md:p-10 rounded-2xl flex flex-col lg:flex-row gap-4 md:gap-8`}
           >
-            <img src={award.bgImage} alt="" className="rounded-lg" />
-            <p className="text-sm md:text-lg">{award.paragraph}</p>
-            <div className="flex items-center ">
-              <p className={`text-zinc-500 md:text-lg`}>Read More</p>
-              <ChevronRight size={20} className="text-zinc-500" />
+            <img
+              src={award.bgImage}
+              alt=""
+              className="rounded-lg lg:size-2/3 lg:order-2"
+            />
+            <div>
+              <p className="text-sm md:text-lg lg:text-sm">{award.paragraph}</p>
+              <div className="flex items-center">
+                <p className={`text-zinc-500 md:text-lg`}>Read More</p>
+                <ChevronRight size={20} className="text-zinc-500" />
+              </div>
             </div>
           </div>
         ))}

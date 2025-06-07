@@ -10,17 +10,48 @@ const Hero = () => {
 
   return (
     <div className="text-white bg-[linear-gradient(to_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/careers-hero.png')] h-screen bg-cover bg-center p-6 flex flex-col items-center justify-between">
-      <div className="flex items-center justify-between w-full p-2 md:p-6">
-          <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48" />
-          <MenuIcon className="text-white md:size-10" onClick={togglePanel}/>
-        </div>
+      <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
+        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+        <MenuIcon
+          className="lg:hidden text-white md:size-10 self-end -translate-y-3"
+          onClick={togglePanel}
+        />
+        <ul className="hidden lg:flex space-x-10 text-sm md:text-lg font-light">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/career">Career</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <a href="#">3d Tour</a>
+          </li>
+          <li>
+            <a href="/blogs">Blogs</a>
+          </li>
+        </ul>
+        <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
+          <img src="/icons/call.png" alt="" className="w-4" />
+          Contact Us
+        </button>
+      </div>
       <div className="flex flex-col items-center justify-between gap-4 md:gap-10 pb-12">
-        <h2 className="text-3xl md:text-5xl font-bold">Work With Us</h2>
-        <p className="text-sm md:text-xl">
+        <h2 className="text-3xl md:text-5xl lg:text-8xl font-bold">
+          Work With Us
+        </h2>
+        <p className="text-sm md:text-xl lg:text-center lg:text-lg lg:w-2/3">
           Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id turpis
           porttitor sed cras donec. Id ac molestie purus tincidunt in cras.
         </p>
-        <button className="primary py-2! md:py-4! md:px-6! md:text-xl!">View Jobs</button>
+        <button className="primary py-2! md:py-4! md:px-6! md:text-xl!">
+          View Jobs
+        </button>
       </div>
       {/* Side Panel */}
       <div
@@ -29,16 +60,34 @@ const Hero = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <XIcon className="cursor-pointer m-4 size-8 md:size-12" strokeWidth={1} onClick={togglePanel} />
+          <XIcon
+            className="cursor-pointer m-4 size-8 md:size-12"
+            strokeWidth={1}
+            onClick={togglePanel}
+          />
         </div>
         <ul className="mx-6 mt-6 flex flex-col gap-6 md:gap-8 text-xl md:text-2xl">
-          <a href="/" className="border-b border-zinc-500 pb-3 md:pb-5">Home</a>
-          <a href="/about" className="border-b border-zinc-500 pb-3 md:pb-5">About Us</a>
-          <a href="/career" className="border-b border-zinc-500 pb-3 md:pb-5">Career</a>
-          <a href="/projects" className="border-b border-zinc-500 pb-3 md:pb-5">Projects</a>
-          <a href="#" className="border-b border-zinc-500 pb-3 md:pb-5">3d Tour</a>
-          <a href="/blogs" className="border-b border-zinc-500 pb-3 md:pb-5">Blogs</a>
-          <a href="/" className="border-b border-zinc-500 pb-3 md:pb-5">Newsletter</a>
+          <a href="/" className="border-b border-zinc-500 pb-3 md:pb-5">
+            Home
+          </a>
+          <a href="/about" className="border-b border-zinc-500 pb-3 md:pb-5">
+            About Us
+          </a>
+          <a href="/career" className="border-b border-zinc-500 pb-3 md:pb-5">
+            Career
+          </a>
+          <a href="/projects" className="border-b border-zinc-500 pb-3 md:pb-5">
+            Projects
+          </a>
+          <a href="#" className="border-b border-zinc-500 pb-3 md:pb-5">
+            3d Tour
+          </a>
+          <a href="/blogs" className="border-b border-zinc-500 pb-3 md:pb-5">
+            Blogs
+          </a>
+          <a href="/" className="border-b border-zinc-500 pb-3 md:pb-5">
+            Newsletter
+          </a>
         </ul>
       </div>
     </div>

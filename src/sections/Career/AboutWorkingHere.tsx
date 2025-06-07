@@ -33,7 +33,14 @@ const facilities = [
 
 const AboutWorkingHere = () => {
   return (
-    <div className="bg-gradient-to-l from-[#CE3631] to-[#E64237E5] text-white px-6 md:px-18 py-12">
+    <div 
+      className="relative bg-gradient-to-l from-[#CE3631] to-[#E64237E5] text-white px-6 md:px-18 py-12"
+    >
+      <img
+        src="/gaikwad-pattern.png" // Replace with your image path
+        alt="Overlay Image"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <h2 className="uppercase text-center font-semibold text-xl md:text-3xl">About working here</h2>
       <p className="text-center py-12 font-light md:text-lg">
         Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id turpis

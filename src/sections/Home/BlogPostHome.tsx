@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 const articles = [
   {
     image: "/all-articles-1.png",

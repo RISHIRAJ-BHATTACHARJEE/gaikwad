@@ -1,5 +1,5 @@
 import { ChevronRight, MenuIcon, XIcon } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import Footer from "../components/Footer";
 
 const awards = [

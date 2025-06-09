@@ -28,7 +28,7 @@ const ImageController = ({
   };
 
   return (
-    <div className="relative w-full lg:mr-auto! lg:w-5/6 lg:items-start border md:my-6 my-5 max-w-4xl h-[10vh] md:h-[12vh] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full lg:mr-auto! lg:w-5/6 lg:items-start md:my-6 my-5 max-w-4xl h-[10vh] md:h-[12vh] flex items-center justify-center overflow-hidden">
       <button
         onClick={prev}
         className="absolute left-0 h-full bg-red-600 w-8 md:w-10 flex items-center justify-center text-white z-10"

@@ -14,13 +14,13 @@ const LiveProjects = () => {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="text-white bg-[linear-gradient(to_bottom,_#17262AB3,_#24343BB3),url('/live-project-mobile.png')] bg-cover bg-no-repeat bg-center py-10">
+    <div className="text-white bg-[linear-gradient(to_bottom,_#17262AB3,_#24343BB3),url('/live-project-mobile.png')] bg-cover bg-no-repeat bg-center py-10 lg:py-20">
       <h2 className="uppercase text-center text-2xl md:text-4xl font-semibold tracking-wide pb-10">
         live projects
       </h2>
       {/* Glassmorphism Card */}
       
-      <div className="text-white flex flex-col lg:flex-row gap-6 p-6 md:p-8 mx-6 md:mx-38 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
+      <div className="text-white flex flex-col lg:flex-row gap-6 lg:gap-0 p-6 md:p-8 mx-6 md:mx-38 lg:mx-30 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
         {/* Image Slider */}
         <div className="flex flex-col gap-6">
           <img

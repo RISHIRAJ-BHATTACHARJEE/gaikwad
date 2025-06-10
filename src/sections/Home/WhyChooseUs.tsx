@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
         <h2 className="text-white text-2xl md:text-3xl font-medium">
           Why Choose Us
         </h2>
-        <img src="/navbar-logo.png" alt="logo" className="w-30 md:w-42" />
+         <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-30 md:w-42" />
         <div className="w-full">
           {whyChooseUsArray.map((item, index) => {
             return (
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
                 >
                   <AccordionTrigger className="border-b-2 border-gray-200 rounded-none">
                     <div className="w-[75vw] flex items-center justify-between gap-4 py-1">
-                      <img src={item.icon} alt="" className="w-5 md:w-10" />
+                       <img loading="lazy" src={item.icon} alt="" className="w-5 md:w-10" />
                       <p className="text-white text-sm md:text-2xl md:font-light md:w-full md:pl-12 text-nowrap">
                         {item.title}
                       </p>
@@ -107,7 +107,7 @@ const WhyChooseUs = () => {
                   >
                     <AccordionTrigger className="rounded-none">
                       <div className="flex w-[32vw]">
-                        <img
+                         <img loading="lazy"
                           src={item.icon}
                           alt={`${item.title} icon`}
                           className="w-7 pb-4 border-b-2 border-gray-200"
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
             })}
           </div>
         </div>
-        <img
+         <img loading="lazy"
           src="/logo.png"
           alt=""
           className="h-[42px] w-[132px] mx-auto mt-12"

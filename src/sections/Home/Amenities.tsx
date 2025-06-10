@@ -67,8 +67,8 @@ const Amenities = () => {
               }}
             >
               {images.map((image, index) => (
-                <img
-                  loading="lazy"
+                 <img loading="lazy"
+                   
                   key={index}
                   src={image}
                   alt={`carousel-image-${index}`}
@@ -88,16 +88,16 @@ const Amenities = () => {
           </p>
           <div className="flex justify-center gap-4 mt-4">
             {/* Left arrow button */}
-            <img
-              loading="lazy"
+             <img loading="lazy"
+               
               src="/icons/comp-proj-left-arrow.png"
               alt="Previous"
               className="invert w-16 md:w-20 cursor-pointer"
               onClick={handlePrevClick}
             />
             {/* Right arrow button */}
-            <img
-              loading="lazy"
+             <img loading="lazy"
+               
               src="/icons/comp-proj-right-arrow.png"
               alt="Next"
               className="invert w-16 md:w-20 cursor-pointer"
@@ -109,7 +109,7 @@ const Amenities = () => {
 
       {/* Web */}
       <div className="hidden relative lg:flex flex-col items-center justify-center gap-12 mt-8 px-12 py-24 h-screen w-full">
-        <img
+         <img loading="lazy"
           src="/white-bg-pattern.png" // Replace with your image path
           alt="Overlay Image"
           className="absolute inset-0 w-full h-full object-cover z-1"
@@ -166,15 +166,15 @@ const Amenities = () => {
             </div>
             {/* Image Carousel */}
             <div className="flex items-center justify-between gap-4 mr-37.5">
-              <img
-                loading="lazy"
+               <img loading="lazy"
+                 
                 src="/basketball.png"
                 alt=""
                 className="w-[10vw]"
               />
-              <img loading="lazy" src="/gym.png" alt="" className="w-[10vw]" />
-              <img
-                loading="lazy"
+               <img loading="lazy"   src="/gym.png" alt="" className="w-[10vw]" />
+               <img loading="lazy"
+                 
                 src="/tennis.png"
                 alt=""
                 className="w-[10vw]"
@@ -185,14 +185,14 @@ const Amenities = () => {
           {/* Navigation Arrows */}
           <div className="flex items-center justify-between gap-3 pr-10">
             <div className="flex gap-3">
-              <img
-                loading="lazy"
+               <img loading="lazy"
+                 
                 src="/icons/comp-proj-left-arrow.png"
                 alt=""
                 className="w-1/6"
               />
-              <img
-                loading="lazy"
+               <img loading="lazy"
+                 
                 src="/icons/comp-proj-right-arrow.png"
                 alt=""
                 className="w-1/6"

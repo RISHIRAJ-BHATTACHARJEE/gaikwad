@@ -1,7 +1,7 @@
 const MeetTheTeam = () => {
   return (
     <div className="relative py-8">
-      <img
+       <img loading="lazy"
         src="/white-bg-pattern.png" // Replace with your image path
         alt="Overlay Image"
         className="absolute inset-0 w-full h-full object-cover z-1"
@@ -10,7 +10,7 @@ const MeetTheTeam = () => {
         Meet The Team
       </h2>
       <div className="lg:flex lg:gap-5 items-center grid grid-cols-2 gap-5 md:gap-10 p-8 md:mx-16">
-        <img
+         <img loading="lazy"
           src="/icons/chevron-left.png"
           alt="arrows"
           className="hidden lg:block size-12"
@@ -27,7 +27,7 @@ const MeetTheTeam = () => {
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img
+             <img loading="lazy"
               src="/icons/linkedin.png"
               alt="linkedin"
               className="size-3 md:size-6"
@@ -50,7 +50,7 @@ const MeetTheTeam = () => {
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img
+             <img loading="lazy"
               src="/icons/linkedin.png"
               alt="linkedin"
               className="size-3 md:size-6"
@@ -73,7 +73,7 @@ const MeetTheTeam = () => {
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img
+             <img loading="lazy"
               src="/icons/linkedin.png"
               alt="linkedin"
               className="size-3 md:size-6"
@@ -96,7 +96,7 @@ const MeetTheTeam = () => {
               <h2 className="text-xs">Sales Head</h2>
             </div>
             {/* Linkedin */}
-            <img
+             <img loading="lazy"
               src="/icons/linkedin.png"
               alt="linkedin"
               className="size-3 md:size-6"
@@ -106,7 +106,7 @@ const MeetTheTeam = () => {
             Lorem Ipsum is simply dummy text of the{" "}
           </p>
         </div>
-        <img
+         <img loading="lazy"
           src="/icons/chevron-right.png"
           alt="arrows"
           className="hidden lg:block size-12"
@@ -118,8 +118,8 @@ const MeetTheTeam = () => {
           <div className="h-1 w-20 bg-zinc-400 rounded-r-full"></div>
         </div>
         <div className="flex">
-          <img src="/icons/chevron-left.png" alt="arrows" className="size-12" />
-          <img
+           <img loading="lazy" src="/icons/chevron-left.png" alt="arrows" className="size-12" />
+           <img loading="lazy"
             src="/icons/chevron-right.png"
             alt="arrows"
             className="size-12"

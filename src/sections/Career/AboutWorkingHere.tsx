@@ -36,7 +36,7 @@ const AboutWorkingHere = () => {
     <div 
       className="relative bg-gradient-to-l from-[#CE3631] to-[#E64237E5] text-white px-6 md:px-18 py-12"
     >
-      <img
+       <img loading="lazy"
         src="/gaikwad-pattern.png" // Replace with your image path
         alt="Overlay Image"
         className="absolute inset-0 w-full h-full object-cover"
@@ -54,7 +54,7 @@ const AboutWorkingHere = () => {
       <div className="grid grid-cols-2 gap-6">
         {facilities.map((facility, index) => (
           <div key={index} className="flex flex-col gap-4 items-center justify-center">
-            <img src={facility.img} alt={facility.title} className="w-8 md:w-12"/>
+             <img loading="lazy" src={facility.img} alt={facility.title} className="w-8 md:w-12"/>
             <h2 className="font-semibold text-center md:text-xl">{facility.title}</h2>
             <p className="text-center text-xs md:text-lg">{facility.description}</p>
           </div>

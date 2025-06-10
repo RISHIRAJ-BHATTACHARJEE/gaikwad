@@ -23,7 +23,7 @@ const LiveProjects = () => {
       <div className="text-white flex flex-col lg:flex-row gap-6 lg:gap-0 p-6 md:p-8 mx-6 md:mx-38 lg:mx-30 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
         {/* Image Slider */}
         <div className="flex flex-col gap-6">
-          <img
+           <img loading="lazy"
             src={images[current]}
             alt="main"
             className="aspect-video w-full lg:w-5/6 h-[220px] object-cover rounded-xl"
@@ -45,7 +45,7 @@ const LiveProjects = () => {
           {/* Amenities & Features */}
           <div className="flex items-center justify-between font-extralight">
             <div className="flex items-center gap-2">
-              <img
+               <img loading="lazy"
                 src="/icons/double-bed.png"
                 alt="icon-1"
                 className="size-6 md:size-8"
@@ -53,7 +53,7 @@ const LiveProjects = () => {
               <p className="md:text-xl md:font-medium">6BA</p>
             </div>
             <div className="flex items-center gap-2">
-              <img
+               <img loading="lazy"
                 src="/icons/bath-tub.png"
                 alt="icon-1"
                 className="size-6 md:size-8"
@@ -61,7 +61,7 @@ const LiveProjects = () => {
               <p className="md:text-xl md:font-medium">6BA</p>
             </div>
             <div className="flex items-center gap-2">
-              <img
+               <img loading="lazy"
                 src="/icons/floorplan.png"
                 alt="icon-1"
                 className="size-6 md:size-8"
@@ -101,7 +101,7 @@ const LiveProjects = () => {
           {/* Project Location */}
           <div className="flex items-center justify-between">
             <button className="primary rounded-lg! flex items-center gap-2 font-extralight text-nowrap text-xs md:text-lg">
-              <img
+               <img loading="lazy"
                 src="/icons/google-maps.png"
                 alt="google-map"
                 className="w-3 md:w-5"

@@ -13,7 +13,7 @@ const BlogPost = () => {
     <>
       <div className="bg-gradient-to-r from-[#24343B] to-[#17262A] text-white p-6 montserrat-regular ">
         <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
-          <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+           <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
           <MenuIcon
             className="lg:hidden text-white md:size-10 self-end -translate-y-3"
             onClick={togglePanel}
@@ -39,12 +39,12 @@ const BlogPost = () => {
             </li>
           </ul>
           <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-            <img src="/icons/call.png" alt="" className="w-4" />
+             <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
             Contact Us
           </button>
         </div>
         <div className="lg:flex lg:mx-18 lg:mb-32">
-          <img
+           <img loading="lazy"
             src="/blogs-1.png"
             alt="single-blog-1"
             className="my-12 md:w-[80%] lg:w-1/2 md:mx-auto"
@@ -87,7 +87,7 @@ const BlogPost = () => {
             printing and typesetting industry
           </p>
           <div className="lg:flex gap-6">
-            <img
+             <img loading="lazy"
               src="individual-blog-1.png"
               alt="individual-blog-1"
               className="my-10 lg:w-1/2 lg:order-2"

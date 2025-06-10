@@ -9,6 +9,7 @@ import Awards from "./pages/Awards"
 import Dashboard from "./pages/Dashboard"
 import NotFound from "./pages/NotFound"
 import BlogPost from "./pages/BlogPost"
+import Uniqo from "./pages/Uniqo"
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/testimonials" element={<Testimonials/>}/>
         <Route path="/awards" element={<Awards/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/uniqo" element={<Uniqo/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

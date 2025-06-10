@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <div className="bg-gradient-to-r from-[#24343BCC] to-[#17262A] montserrat-regular">
       <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
-        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+         <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
         <MenuIcon
           className="lg:hidden text-white md:size-10 self-end -translate-y-3"
           onClick={togglePanel}
@@ -49,7 +49,7 @@ const Projects = () => {
           </li>
         </ul>
         <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-          <img src="/icons/call.png" alt="" className="w-4" />
+           <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
           Contact Us
         </button>
       </div>
@@ -60,7 +60,7 @@ const Projects = () => {
       <div className="text-white flex flex-col lg:flex-row gap-6 p-6 md:p-8 mx-6 md:mx-28 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
         <div className="lg:flex lg:gap-12">
           <div className="lg:flex lg:flex-col gap-5 lg:items-start lg:w-2/3!">
-            <img
+             <img loading="lazy"
               src={images[current]}
               alt="main"
               className="w-full h-[220px] md:h-[310px] object-cover rounded-xl"
@@ -82,7 +82,7 @@ const Projects = () => {
               {/* Amenities & Features */}
               <div className="flex items-center justify-between font-extralight my-6 md:my-8">
                 <div className="flex items-center gap-2">
-                  <img
+                   <img loading="lazy"
                     src="/icons/double-bed.png"
                     alt="icon-1"
                     className="size-6 md:size-10"
@@ -90,7 +90,7 @@ const Projects = () => {
                   <p className="md:text-xl">6BA</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <img
+                   <img loading="lazy"
                     src="/icons/bath-tub.png"
                     alt="icon-1"
                     className="size-6 md:size-10"
@@ -98,7 +98,7 @@ const Projects = () => {
                   <p className="md:text-xl">6BA</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <img
+                   <img loading="lazy"
                     src="/icons/floorplan.png"
                     alt="icon-1"
                     className="size-6 md:size-10"
@@ -143,7 +143,7 @@ const Projects = () => {
             {/* Project Location */}
             <div className="flex items-center justify-between">
               <button className="primary rounded-lg! flex items-center gap-2 font-extralight text-nowrap text-xs md:text-xl lg:text-base">
-                <img
+                 <img loading="lazy"
                   src="/icons/google-maps.png"
                   alt="google-map"
                   className="w-3 md:w-7 lg:w-5"
@@ -172,10 +172,10 @@ const Projects = () => {
           );
         })}
         {/* 3d images */}
-        <img src="/3d-house-1.png" alt="" className="hidden lg:block absolute w-2/10 right-0 -top-53"/>
-        <img src="/3d-house-2.png" alt="" className="hidden lg:block absolute w-2/11 left-0 top-102"/>
-        <img src="/3d-house-3.png" alt="" className="hidden lg:block absolute w-2/11 right-0 bottom-266"/>
-        <img src="/3d-house-4.png" alt="" className="hidden lg:block absolute w-2/11 left-0 bottom-116"/>
+         <img loading="lazy" src="/3d-house-1.png" alt="" className="hidden lg:block absolute w-2/10 right-0 -top-53"/>
+         <img loading="lazy" src="/3d-house-2.png" alt="" className="hidden lg:block absolute w-2/11 left-0 top-102"/>
+         <img loading="lazy" src="/3d-house-3.png" alt="" className="hidden lg:block absolute w-2/11 right-0 bottom-266"/>
+         <img loading="lazy" src="/3d-house-4.png" alt="" className="hidden lg:block absolute w-2/11 left-0 bottom-116"/>
       </div>
       {/* Side Panel */}
       <div
@@ -231,7 +231,7 @@ const ProjectCard = ({
   return (
     <div className="text-white flex flex-col lg:flex-row gap-6 lg:gap-12 p-6 md:p-8 lg:py-14 mx-6 md:mx-28 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15">
       <div className="lg:flex lg:flex-col gap-5 lg:items-start ">
-        <img
+         <img loading="lazy"
           src={images[current]}
           alt="main"
           className="w-full h-[220px] md:h-[310px] object-cover rounded-xl"
@@ -250,7 +250,7 @@ const ProjectCard = ({
         {/* Amenities & Features */}
         <div className="flex items-center justify-between font-extralight my-5 md:my-8">
           <div className="flex items-center gap-2">
-            <img
+             <img loading="lazy"
               src="/icons/double-bed.png"
               alt="icon-1"
               className="size-6 md:size-10"
@@ -258,7 +258,7 @@ const ProjectCard = ({
             <p className="md:text-xl">6BA</p>
           </div>
           <div className="flex items-center gap-2">
-            <img
+             <img loading="lazy"
               src="/icons/bath-tub.png"
               alt="icon-1"
               className="size-6 md:size-10"
@@ -266,7 +266,7 @@ const ProjectCard = ({
             <p className="md:text-xl">6BA</p>
           </div>
           <div className="flex items-center gap-2">
-            <img
+             <img loading="lazy"
               src="/icons/floorplan.png"
               alt="icon-1"
               className="size-6 md:size-10"
@@ -307,12 +307,12 @@ const ProjectCard = ({
           <div className="flex lg:flex-col lg:gap-2 items-center justify-between w-full">
             <h2 className="md:text-2xl lg:text-lg">Project reviews</h2>
             <button className="primary rounded-lg! lg:rounded-full! flex items-center gap-2 font-extralight text-nowrap text-xs">
-              <img
+               <img loading="lazy"
                 src="/icons/google.png"
                 alt="google-map"
                 className="w-18 md:w-28 lg:w-20"
               />
-              <img
+               <img loading="lazy"
                 src="/icons/solar_arrow-up-linear.png"
                 alt="google-map"
                 className="w-5 md:w-8 lg:w-6"
@@ -322,7 +322,7 @@ const ProjectCard = ({
           <div className="flex lg:flex-col lg:gap-2 items-center justify-between w-full">
             <h2 className="md:text-2xl lg:text-lg">Project Location</h2>
             <button className="primary rounded-lg! lg:rounded-full! flex items-center gap-2 font-extralight text-nowrap text-xs md:text-lg">
-              <img
+               <img loading="lazy"
                 src="/icons/google-maps.png"
                 alt="google-map"
                 className="w-3 md:w-6 lg:w-4"

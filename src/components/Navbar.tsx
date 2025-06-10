@@ -30,7 +30,7 @@ const navLinks = [
 const Navbar = () => {
   return (
     <div className="w-full absolute top-0 flex items-center justify-between px-48 pt-16">
-      <img src="/navbar-logo.png" alt="logo" className="w-[190px] h-[61px]"/>
+       <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-[190px] h-[61px]"/>
       <div className="flex items-center text-white gap-8 text-lg">
         {navLinks.map((item, index)=>(
             <ul key={index}>

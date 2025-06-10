@@ -46,11 +46,11 @@ const ImageController = ({
               index === current ? 'border-2 border-blue-500 opacity-100' : 'opacity-70'
             }`} // Highlight the current image
           >
-            <img
+             <img loading="lazy"
               src={src}
               alt={`carousel-${index}`}
               className="w-full h-full object-cover"
-              loading="lazy"
+               
             />
           </div>
         ))}

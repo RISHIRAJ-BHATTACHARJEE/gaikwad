@@ -94,7 +94,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
                 "linear-gradient(to right, #00000080, #00000000), rgba(255, 255, 255, 0.15)",
             }}
           >
-            <img
+             <img loading="lazy"
               src="/icons/quote.png"
               alt="quote"
               className="w-8 md:w-12 self-end mr-6"
@@ -104,14 +104,14 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
             </p>
             <div className="flex items-center justify-between w-full">
               <div className="flex text-white gap-2 text-sm">
-                <img src={card.profileImage} alt="avatar" className="w-10 md:w-14" />
+                 <img loading="lazy" src={card.profileImage} alt="avatar" className="w-10 md:w-14" />
                 <div >
                   <h2  className="md:text-lg">{card.name}</h2>
                   <p className="md:text-lg">{card.designation}</p>
                 </div>
               </div>
               <div className="flex gap-1 md:gap-3 items-center justify-center bg-gray-500 px-1 md:px-3 rounded-2xl">
-                <img src="/icons/Star.png" alt="star" className="w-2.5 md:w-5" />
+                 <img loading="lazy" src="/icons/Star.png" alt="star" className="w-2.5 md:w-5" />
                 <p className="text-[10px] md:text-xl text-white md:text-center">{card.rating}</p>
               </div>
             </div>
@@ -141,7 +141,7 @@ const CarouselControl = ({
       title={title}
       onClick={handleClick}
     >
-      <img src="/icons/comp-proj-right-arrow.png" alt="" />
+       <img loading="lazy" src="/icons/comp-proj-right-arrow.png" alt="" />
     </button>
   );
 };

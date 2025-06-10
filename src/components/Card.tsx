@@ -21,18 +21,18 @@ export const Card = ({ card }: CardProps) => (
             "linear-gradient(to right, #00000080, #00000000), rgba(255, 255, 255, 0.15)",
         }}
       >
-        <img src="/icons/quote.png" alt="quote" className="w-8 self-end mr-6" />
+         <img loading="lazy" src="/icons/quote.png" alt="quote" className="w-8 self-end mr-6" />
         <p className="text-white text-xs font-light leading-5">{card.review}</p>
         <div className="flex items-center justify-between w-full">
           <div className="flex text-white gap-2 text-sm">
-            <img src="review-avatar.png" alt="avatar" className="w-10" />
+             <img loading="lazy" src="review-avatar.png" alt="avatar" className="w-10" />
             <div>
               <h2>{card.name}</h2>
               <p>{card.designation}</p>
             </div>
           </div>
           <div className="flex gap-1 items-center bg-gray-500 px-1 rounded-2xl">
-            <img src="/icons/Star.png" alt="star" className="w-2.5" />
+             <img loading="lazy" src="/icons/Star.png" alt="star" className="w-2.5" />
             <p className="text-[10px] text-white">{card.rating}</p>
           </div>
         </div>

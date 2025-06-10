@@ -84,7 +84,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
           >
             {/* Card Components */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <img
+               <img loading="lazy"
                 src="/icons/line_instagram.png"
                 alt="Instagram icon"
                 className="size-12"
@@ -119,7 +119,7 @@ const CarouselControl = ({
       title={title}
       onClick={handleClick}
     >
-      <img src="/icons/comp-proj-right-arrow.png" alt="" className="invert"/>
+       <img loading="lazy" src="/icons/comp-proj-right-arrow.png" alt="" className="invert"/>
     </button>
   );
 };

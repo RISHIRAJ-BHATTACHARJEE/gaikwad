@@ -89,7 +89,7 @@ const OpenPositions = () => {
   return (
     <div className="relative py-12 px-8 md:px-28 bg-transparent min-h-[400px]">
       {/* Brand Pattern */}
-      <img
+       <img loading="lazy"
         src="/gaikwad-pattern-1.png" // Verify path
         alt="Pattern Overlay"
         className="absolute inset-0 w-full h-full object-contain z-0 opacity-50 sm:opacity-40 md:opacity-30"

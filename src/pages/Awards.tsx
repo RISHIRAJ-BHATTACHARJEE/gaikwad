@@ -39,7 +39,7 @@ const Awards = () => {
   return (
     <div className="bg-gradient-to-r from-[#24343BCC] to-[#17262A] montserrat-regular text-white">
       <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
-        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+         <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
         <MenuIcon
           className="lg:hidden text-white md:size-10 self-end -translate-y-3"
           onClick={togglePanel}
@@ -65,7 +65,7 @@ const Awards = () => {
           </li>
         </ul>
         <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-          <img src="/icons/call.png" alt="" className="w-4" />
+           <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
           Contact Us
         </button>
       </div>
@@ -81,7 +81,7 @@ const Awards = () => {
             key={index}
             className={`${award.bgColor} p-6 md:p-10 rounded-2xl flex flex-col lg:flex-row gap-4 md:gap-8`}
           >
-            <img
+             <img loading="lazy"
               src={award.bgImage}
               alt=""
               className="rounded-lg lg:size-2/3 lg:order-2"

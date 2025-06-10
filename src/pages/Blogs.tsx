@@ -46,7 +46,7 @@ const Blogs = () => {
     <>
       <div className="bg-gradient-to-b from-[#CE3631] to-[#E64237E5] p-6 montserrat-regular">
         <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:p-8">
-          <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+           <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
           <MenuIcon
             className="lg:hidden text-white md:size-10 self-end -translate-y-3"
             onClick={togglePanel}
@@ -72,7 +72,7 @@ const Blogs = () => {
             </li>
           </ul>
           <button className="hidden lg:flex items-center gap-2 bg-[#17262A] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-            <img src="/icons/call.png" alt="" className="w-4" />
+             <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
             Contact Us
           </button>
         </div>
@@ -81,7 +81,7 @@ const Blogs = () => {
         </h2>
         {/* Mobile Card */}
         <div className="lg:hidden bg-white mt-12 flex flex-col justify-center items-center gap-4 p-6 md:p-8 md:mx-18 rounded-[40px] md:rounded-[50px]">
-          <img src="/blogs-1.png" alt="blog-1" className="" />
+           <img loading="lazy" src="/blogs-1.png" alt="blog-1" className="" />
           <p className="font-semibold md:w-full md:text-xl">
             Lorem Ipsum is simply dummy text of the printing
           </p>
@@ -108,12 +108,12 @@ const Blogs = () => {
           </div>
           {/* image */}
           <div className="flex relative overflow-hidden">
-            <img
+             <img loading="lazy"
               src="/blogs-ellipse.png"
               alt=""
               className="w-4/7 absolute z-10"
             />
-            <img
+             <img loading="lazy"
               src="/blogs-1-copy.png"
               alt=""
               className="w-5/6 translate-x-20.5 rounded-3xl  "
@@ -132,7 +132,7 @@ const Blogs = () => {
                 key={index}
                 className="flex items-center gap-5 p-4 rounded-lg mb-4 lg:grid grid-cols-3"
               >
-                <img src={article.image} alt="" className="w-32 md:w-42" />
+                 <img loading="lazy" src={article.image} alt="" className="w-32 md:w-42" />
                 <div className="flex flex-col justify-between gap-4">
                   <p className="text-white font-medium text-sm md:text-xl">
                     {article.text}
@@ -151,7 +151,7 @@ const Blogs = () => {
                 className="flex items-center gap-5 p-4 rounded-[40px] mb-4 hover:bg-[#A71E22]/50"
               >
                 <div>
-                  <img src={article.image} alt="" className="" />
+                   <img loading="lazy" src={article.image} alt="" className="" />
                   <div className="flex flex-col justify-between gap-4">
                     <p className="text-white font-medium text-sm md:text-xl mt-4">
                       {article.text}

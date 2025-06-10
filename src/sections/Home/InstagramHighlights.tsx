@@ -26,7 +26,7 @@ const highlights = [
 const InstagramHighlights = () => {
   return (
     <div className="relative h-[73vh] md:h-[76vh] lg:h-[80vh] md:overflow-x-hidden">
-      <img
+       <img loading="lazy"
           src="/white-bg-pattern.png" // Replace with your image path
           alt="Overlay Image"
           className="absolute inset-0 w-full h-full object-cover z-1"

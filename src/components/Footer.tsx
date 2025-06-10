@@ -5,29 +5,29 @@ const Footer = () => {
     <div className="bg-[#17262A] p-6 text-white md:flex md:flex-col md:gap-4 lg:items-center lg:justify-between lg:p-18">
       <div className="lg:flex">
         <div>
-          <img
+           <img loading="lazy"
             src="/navbar-logo.png"
             alt="logo"
             className="w-48 md:w-62 lg:w-52"
           />
           {/* Logos */}
           <div className="flex gap-3 lg:gap-5 py-7">
-            <img
+             <img loading="lazy"
               src="/icons/instagram.png"
               alt="instagram"
               className="w-4 lg:w-6 ml-2"
             />
-            <img
+             <img loading="lazy"
               src="/icons/facebook.png"
               alt="facebook"
               className="w-4 lg:w-6"
             />
-            <img
+             <img loading="lazy"
               src="/icons/telegram.png"
               alt="telegram"
               className="w-4 lg:w-6"
             />
-            <img src="/icons/x.png" alt="x" className="w-4 lg:w-6" />
+             <img loading="lazy" src="/icons/x.png" alt="x" className="w-4 lg:w-6" />
           </div>
         </div>
         {/* Links */}

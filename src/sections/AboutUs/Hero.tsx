@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/about-us-hero-web.png')] bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/about-us-hero.png')] p-8 bg-cover bg-center h-screen flex flex-col items-center justify-between text-white">
       <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2">
-        <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+         <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
         <MenuIcon
           className="lg:hidden text-white md:size-10 self-end -translate-y-3"
           onClick={togglePanel}
@@ -37,7 +37,7 @@ const Hero = () => {
           </li>
         </ul>
         <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-          <img src="/icons/call.png" alt="" className="w-4" />
+           <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
           Contact Us
         </button>
       </div>

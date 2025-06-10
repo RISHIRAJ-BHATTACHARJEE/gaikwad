@@ -1,7 +1,7 @@
 const CompletedProjects = () => {
   return (
     <div className="relative bg-gradient-to-l from-[#17262A] to-[#24343BCC] text-white py-10 lg:py-24">
-      <img
+       <img loading="lazy"
         src="/uniqo-pattern.png" // Replace with your image path
         alt="Overlay Image"
         className="absolute inset-0 w-full h-full object-cover"
@@ -18,7 +18,7 @@ const CompletedProjects = () => {
             </h2>
             <div className="flex items-center justify-between gap-5 font-extralight">
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/double-bed.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -26,7 +26,7 @@ const CompletedProjects = () => {
                 <p className="md:text-2xl">6BA</p>
               </div>
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/bath-tub.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -34,7 +34,7 @@ const CompletedProjects = () => {
                 <p className="md:text-2xl">6BA</p>
               </div>
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/floorplan.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -52,7 +52,7 @@ const CompletedProjects = () => {
             </h2>
             <div className="flex items-center justify-between gap-5 font-extralight">
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/double-bed.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -60,7 +60,7 @@ const CompletedProjects = () => {
                 <p className="md:text-2xl">6BA</p>
               </div>
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/bath-tub.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -68,7 +68,7 @@ const CompletedProjects = () => {
                 <p className="md:text-2xl">6BA</p>
               </div>
               <div className="flex items-center gap-2">
-                <img
+                 <img loading="lazy"
                   src="/icons/floorplan.png"
                   alt="icon-1"
                   className="size-5 md:size-10"
@@ -91,8 +91,8 @@ const CompletedProjects = () => {
         </div>
 
         <div className="lg:hidden flex items-center justify-center gap-3">
-          <img src="icons/comp-proj-left-arrow.png" alt="" className="w-18" />
-          <img src="icons/comp-proj-right-arrow.png" alt="" className="w-18" />
+           <img loading="lazy" src="icons/comp-proj-left-arrow.png" alt="" className="w-18" />
+           <img loading="lazy" src="icons/comp-proj-right-arrow.png" alt="" className="w-18" />
         </div>
       </div>
     </div>

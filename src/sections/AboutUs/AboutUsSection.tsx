@@ -53,17 +53,17 @@ const AboutUs = () => {
             </div>
           </div>
           <hr className="hidden md:block" />
-          <img src="house-1.png" alt="" className="hidden md:block" />
+           <img loading="lazy" src="house-1.png" alt="" className="hidden md:block" />
         </div>
       </div>
       {/* Web */}
       <div className="hidden lg:block h-screen relative text-white bg-gradient-to-l from-[#CE3631] to-[#E64237E5] py-18">
-        <img
+         <img loading="lazy"
           src="/uniqo-pattern.png" // Replace with your image path
           alt="Overlay Image"
           className="absolute inset-0 w-full h-full object-cover z-1"
         />
-        <img src="/1.png" alt="" className="absolute bottom-0 -left-17.5" />
+         <img loading="lazy" src="/1.png" alt="" className="absolute bottom-0 -left-17.5" />
         <div className="z-10 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15 mx-44 p-12">
           <div className="flex">
             {/* About & Description */}
@@ -83,7 +83,7 @@ const AboutUs = () => {
               </p>
             </div>
             {/* image */}
-            <img src="/house-1.png" alt="house-img" className=" w-2/4" />
+             <img loading="lazy" src="/house-1.png" alt="house-img" className=" w-2/4" />
           </div>
           {/* Badges */}
           <div className="flex items-center justify-between gap-10 w-full border-y border-zinc-400 py-5">

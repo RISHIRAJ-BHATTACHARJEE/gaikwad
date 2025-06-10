@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="bg-[url('/bg-1-mobile.png')] lg:bg-[url('/bg-1.png')] bg-cover bg-no-repeat flex flex-col pt-7 md:pt-10 lg:z-50">
       <div className="bg-[#0C1C20] mx-4 md:mx-10 lg:mx-20 p-6 lg:p-0 flex flex-col text-white items-center">
         <div className="flex items-center justify-between lg:justify-evenly lg:gap-8 w-full p-2 lg:pt-12">
-          <img src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
+           <img loading="lazy" src="/navbar-logo.png" alt="logo" className="w-34 md:w-48 " />
           <MenuIcon
             className="lg:hidden text-white md:size-10 self-end -translate-y-3"
             onClick={togglePanel}
@@ -38,7 +38,7 @@ const Hero = () => {
               </li>
             </ul>
           <button className="hidden lg:flex items-center gap-2 bg-[#CE3631] px-4 py-3 rounded-2xl text-white text-sm cursor-pointer">
-            <img src="/icons/call.png" alt="" className="w-4" />
+             <img loading="lazy" src="/icons/call.png" alt="" className="w-4" />
             Contact Us
           </button>
         </div>
@@ -55,7 +55,7 @@ const Hero = () => {
               </p>
               <button className="primary text-sm w-2/3 text-nowrap lg:pr-2!">Discover More</button>
             </div>
-            <img
+             <img loading="lazy"
               src="1.png"
               alt=""
               className="md:-translate-y-9 lg:w-[50vw] lg:pl-28"
@@ -63,17 +63,17 @@ const Hero = () => {
             <div className="absolute -right-8 md:-right-36 top-7 md:top-8">
               {/* Avatars */}
               <div className="flex space-x-[-5px] lg:space-x-[-7px] md:translate-x-7 lg:translate-x-46">
-                <img
+                 <img loading="lazy"
                   src="avatar-1.png"
                   alt="avatar-1"
                   className="size-6 md:size-10 rounded-full"
                 />
-                <img
+                 <img loading="lazy"
                   src="avatar-2.png"
                   alt="avatar-1"
                   className="size-6 md:size-10 rounded-full"
                 />
-                <img
+                 <img loading="lazy"
                   src="avatar-1.png"
                   alt="avatar-1"
                   className="size-6 md:size-10 rounded-full"

@@ -173,7 +173,7 @@ export function ReviewCarousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[110vmin] mx-auto"
+      className="relative w-[70vmin] h-[110vmin] mx-auto z-10"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

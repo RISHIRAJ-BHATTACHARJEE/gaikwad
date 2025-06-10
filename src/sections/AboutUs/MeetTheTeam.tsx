@@ -1,6 +1,11 @@
 const MeetTheTeam = () => {
   return (
-    <div className="py-8">
+    <div className="relative py-8">
+      <img
+        src="/white-bg-pattern.png" // Replace with your image path
+        alt="Overlay Image"
+        className="absolute inset-0 w-full h-full object-cover z-1"
+      />
       <h2 className="text-2xl md:text-3xl font-semibold text-center uppercase">
         Meet The Team
       </h2>
@@ -11,7 +16,7 @@ const MeetTheTeam = () => {
           className="hidden lg:block size-12"
         />
         {/* Card-1 */}
-        <div className="rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
+        <div className="z-10 rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
           {/* Name, Designation & Linkedin */}
           <div className="flex gap-4">
             {/* Name and Designation */}
@@ -34,7 +39,7 @@ const MeetTheTeam = () => {
         </div>
 
         {/* Card-2 */}
-        <div className="rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-2.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
+        <div className="z-10 rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-2.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
           {/* Name, Designation & Linkedin */}
           <div className="flex gap-4">
             {/* Name & Designation */}
@@ -57,7 +62,7 @@ const MeetTheTeam = () => {
         </div>
 
         {/* Card-3 */}
-        <div className="rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-3.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
+        <div className="z-10 rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-3.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
           {/* Name, Designation & Linkedin */}
           <div className="flex gap-4">
             {/* Name & Designation */}
@@ -80,7 +85,7 @@ const MeetTheTeam = () => {
         </div>
 
         {/* Card-4 */}
-        <div className="rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-4.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
+        <div className="z-10 rounded-2xl lg:rounded-lg bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/team-1.png')] lg:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/meet-the-team-4.png')] h-[40vh] lg:h-[50vh] bg-cover bg-center flex gap-3 flex-col items-center justify-end text-white pb-4">
           {/* Name, Designation & Linkedin */}
           <div className="flex gap-4">
             {/* Name & Designation */}

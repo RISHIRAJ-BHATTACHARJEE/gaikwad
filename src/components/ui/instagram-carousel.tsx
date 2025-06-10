@@ -52,7 +52,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:2000px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[250px] h-[385px] mx-[4vmin] md:mx-[9vmin] z-10"
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[250px] h-[385px] mx-[4vmin] md:mx-[9vmin] lg:mx-2 z-10"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -66,7 +66,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 md:left-22 w-full h-full md:w-[30vh] md:h-[50vh] rounded-sm overflow-hidden"
+          className="absolute top-0 left-0 md:left-22 lg:left-46 w-full h-full md:w-[30vh] md:h-[50vh] rounded-sm overflow-hidden"
           style={{
             backgroundImage: `url('/${card.image}')`,
             backgroundSize: "cover",
@@ -151,7 +151,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[110vmin] md:h-[60vmin] md:scroll-none mx-auto"
+      className="relative z-10 w-[70vmin] h-[110vmin] md:h-[60vmin] md:scroll-none mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
@@ -171,7 +171,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full -bottom-6 md:top-122">
+      <div className="absolute flex justify-center w-full -bottom-6 md:top-122 lg:top-102">
         <CarouselControl
           type="previous"
           title="Go to previous slide"

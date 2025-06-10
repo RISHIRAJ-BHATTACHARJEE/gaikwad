@@ -108,7 +108,12 @@ const Amenities = () => {
       </div>
 
       {/* Web */}
-      <div className="hidden lg:flex flex-col items-center justify-center gap-12 mt-8 px-12 py-24 h-screen w-full">
+      <div className="hidden relative lg:flex flex-col items-center justify-center gap-12 mt-8 px-12 py-24 h-screen w-full">
+        <img
+          src="/white-bg-pattern.png" // Replace with your image path
+          alt="Overlay Image"
+          className="absolute inset-0 w-full h-full object-cover z-1"
+        />
         {/* Texts and Headings */}
         <div className="flex px-32 items-start justify-center gap-24 w-full">
           {/* Headings */}
@@ -146,7 +151,7 @@ const Amenities = () => {
         </div>
 
         {/* Image Slider */}
-        <div className="bg-[url('/swimming-pool.png')] bg-cover bg-no-repeat bg-center aspect-video size-3/4 rounded-3xl mx-auto flex flex-col justify-end gap-7 pl-10 pb-8">
+        <div className="z-10 bg-[url('/swimming-pool.png')] bg-cover bg-no-repeat bg-center aspect-video size-3/4 rounded-3xl mx-auto flex flex-col justify-end gap-7 pl-10 pb-8">
           <div className="flex items-center justify-between">
             {/* h2 & p div */}
             <div className="flex flex-col gap-7 w-4/5 ">

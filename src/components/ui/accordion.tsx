@@ -38,7 +38,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <img src="/icons/comp-proj-right-arrow.png" className="text-muted-foreground pointer-events-none w-7 md:w-12 shrink-0 translate-y-0.5 transition-transform duration-200" />
+        <img src="/icons/comp-proj-right-arrow.png" className="text-muted-foreground pointer-events-none w-7 md:w-12 lg:w-16 shrink-0 translate-y-0.5 transition-transform duration-200 lg:ml-8" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )

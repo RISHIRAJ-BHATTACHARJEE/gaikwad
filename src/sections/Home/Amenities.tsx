@@ -108,8 +108,94 @@ const Amenities = () => {
       </div>
 
       {/* Web */}
-      <div className="hidden lg:block px-12 py-12">
-        
+      <div className="hidden lg:flex flex-col items-center justify-center gap-12 mt-8 px-12 py-24 h-screen w-full">
+        {/* Texts and Headings */}
+        <div className="flex px-32 items-start justify-center gap-24 w-full">
+          {/* Headings */}
+          <div className="w-1/2">
+            <h2 className="capitalize text-3xl font-semibold float-right">
+              Check out our <br />
+              top class{" "}
+              <span className="uppercase text-[#E64237]">amenities</span>
+            </h2>
+          </div>
+          {/* Paragraph's */}
+          <div className="w-full">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry.Lorem Ipsum is simply dummy text of the
+              printing
+            </p>
+            {/* Badges */}
+            <div className="flex justify-between mt-6">
+              <div className="flex flex-col items-center">
+                <p className="text-xl">Years of experience</p>
+                <h2 className="font-medium text-3xl">7239</h2>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-xl">States</p>
+                <h2 className="font-medium text-3xl">9+</h2>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="text-xl">States</p>
+                <h2 className="font-medium text-3xl">9+</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Image Slider */}
+        <div className="bg-[url('/swimming-pool.png')] bg-cover bg-no-repeat bg-center aspect-video size-3/4 rounded-3xl mx-auto flex flex-col justify-end gap-7 pl-10 pb-8">
+          <div className="flex items-center justify-between">
+            {/* h2 & p div */}
+            <div className="flex flex-col gap-7 w-4/5 ">
+              <h2 className="text-4xl font-base text-white leading-12 w-fit">
+                Swimming <br /> Pool
+              </h2>
+              <p className="text-white pr-8">
+                Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id
+                turpis porttitor sed cras donec. Id ac molestie purus tincidunt
+                in{" "}
+              </p>
+            </div>
+            {/* Image Carousel */}
+            <div className="flex items-center justify-between gap-4 mr-37.5">
+              <img
+                loading="lazy"
+                src="/basketball.png"
+                alt=""
+                className="w-[10vw]"
+              />
+              <img loading="lazy" src="/gym.png" alt="" className="w-[10vw]" />
+              <img
+                loading="lazy"
+                src="/tennis.png"
+                alt=""
+                className="w-[10vw]"
+              />
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <div className="flex items-center justify-between gap-3 pr-10">
+            <div className="flex gap-3">
+              <img
+                loading="lazy"
+                src="/icons/comp-proj-left-arrow.png"
+                alt=""
+                className="w-1/6"
+              />
+              <img
+                loading="lazy"
+                src="/icons/comp-proj-right-arrow.png"
+                alt=""
+                className="w-1/6"
+              />
+            </div>
+            <h2 className="text-3xl text-white font-medium">01</h2>
+          </div>
+        </div>
       </div>
     </div>
   );

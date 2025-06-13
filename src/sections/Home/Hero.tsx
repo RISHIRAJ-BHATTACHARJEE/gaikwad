@@ -42,25 +42,25 @@ const Hero = () => {
             Contact Us
           </button>
         </div>
-        <h2 className="uppercase font-semibold text-3xl lg:text-[6rem] md:text-7xl pt-16 tracking-wider">
+        <h2 className="uppercase font-semibold text-3xl lg:text-[6rem] 2xl:text-[9rem] 2xl:translate-y-16 md:text-7xl pt-16 tracking-wider">
           dream estate
         </h2>
         <div className="lg:sticky">
           <div className="relative lg:flex items-end">
-            <div className="hidden lg:flex flex-col gap-6 absolute -left-36 top-18 w-2/4">
+            <div className="hidden lg:flex flex-col gap-6 absolute -left-36 2xl:-left-48 top-18 2xl:top-44 w-2/4 2xl:w-2/5">
               <p className="font-light text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
               </p>
-              <button className="primary text-sm w-2/3 text-nowrap lg:pr-2!">Discover More</button>
+              <button className="primary text-sm w-2/3 2xl:w-fit text-nowrap lg:pr-2! 2xl:pr-3.5! 2xl:rounded-2xl!">Discover More</button>
             </div>
              <img loading="lazy"
               src="1.png"
               alt=""
-              className="md:-translate-y-9 lg:w-[50vw] lg:pl-28"
+              className="md:-translate-y-9 lg:w-[50vw] lg:pl-28 2xl:translate-y-0"
             />
-            <div className="absolute -right-8 md:-right-36 top-7 md:top-8">
+            <div className="absolute -right-8 md:-right-36 top-7 md:top-8 2xl:top-32 2xl:right-0">
               {/* Avatars */}
               <div className="flex space-x-[-5px] lg:space-x-[-7px] md:translate-x-7 lg:translate-x-46">
                  <img loading="lazy"

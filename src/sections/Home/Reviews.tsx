@@ -1,6 +1,5 @@
 import { ReviewCarousel } from "../../components/ui/review-carousel";
 
-
 const reviewSlides = [
   {
     review:
@@ -61,7 +60,7 @@ const reviewSlides = [
 const Reviews = () => {
 
   return (
-    <div className="relative bg-gradient-to-r overflow-x-hidden flex flex-col items-center justify-center gap-8 from-[#24343B] to-[#0C1C20] pt-12 pb-20 md:pb-0 md:h-[90vh] lg:h-[105vh]">
+    <div className="relative bg-gradient-to-r overflow-x-hidden flex flex-col items-center justify-center gap-8 from-[#24343B] to-[#0C1C20] pt-12 pb-20 md:pb-0 md:h-[90vh] lg:h-[105vh] 2xl:h-[90vh]">
        <img loading="lazy"
           src="/uniqo-pattern.png" // Replace with your image path
           alt="Overlay Image"

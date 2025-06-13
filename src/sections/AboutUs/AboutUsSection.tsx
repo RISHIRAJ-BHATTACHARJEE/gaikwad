@@ -57,19 +57,19 @@ const AboutUs = () => {
         </div>
       </div>
       {/* Web */}
-      <div className="hidden lg:block h-screen relative text-white bg-gradient-to-l from-[#CE3631] to-[#E64237E5] py-18">
+      <div className="hidden lg:block h-screen relative text-white bg-gradient-to-l from-[#CE3631] to-[#E64237E5] py-18 2xl:py-32">
          <img loading="lazy"
           src="/uniqo-pattern.png" // Replace with your image path
           alt="Overlay Image"
           className="absolute inset-0 w-full h-full object-cover z-1"
         />
          <img loading="lazy" src="/1.png" alt="" className="absolute bottom-0 -left-17.5" />
-        <div className="z-10 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15 mx-44 p-12">
+        <div className="2xl:mx-64 z-10 rounded-2xl border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15 mx-44 p-12">
           <div className="flex">
             {/* About & Description */}
             <div className="flex flex-col gap-8">
-              <h2 className="text-5xl font-semibold">About Us</h2>
-              <p className="text-base">
+              <h2 className="text-5xl font-semibold 2xl:w-4/5">About Us</h2>
+              <p className="text-base 2xl:w-1/2 2xl:mb-24 2xl:leading-7">
                 Lorem ipsum dolor sit amet consectetur. Ac consequat at nec id
                 turpis porttitor sed cras donec. Id ac molestie purus tincidunt
                 in cras. Quis a lacus molestie praesent suspendisse ac tellus.
@@ -83,7 +83,7 @@ const AboutUs = () => {
               </p>
             </div>
             {/* image */}
-             <img loading="lazy" src="/house-1.png" alt="house-img" className=" w-2/4" />
+             <img loading="lazy" src="/house-1.png" alt="house-img" className="w-2/4 2xl:w-2/5 2xl:absolute 2xl:right-0 2xl:-top-20" />
           </div>
           {/* Badges */}
           <div className="flex items-center justify-between gap-10 w-full border-y border-zinc-400 py-5">
